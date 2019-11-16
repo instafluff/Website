@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# From Gatsby starter
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+.cache/
+
+# Gatsby Build directory
+public/
+static/admin/*.bundle.*
+.DS_Store
