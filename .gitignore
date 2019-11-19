@@ -51,6 +51,10 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
 # Yarn Integrity file
 .yarn-integrity
 
@@ -60,12 +64,14 @@ typings/
 # next.js build output
 .next
 
+# Gatsby files
+.cache/
+public/
+static/admin/*.bundle.*
+
+# Mac files
+.DS_Store
+
 # From Gatsby starter
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-.cache/
-
-# Gatsby Build directory
-public/
-static/admin/*.bundle.*
-.DS_Store
