@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 
 import instagram from '../assets/icons/instagram-brands.svg'
 import twitter from '../assets/icons/twitter-brands.svg'
+import { InstagramSvg } from './svg_icons'
+import { TwitterSvg } from './svg_icons'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter">
-        <div className="content has-text-centered has-text-white-ter">
+      <footer className="footer">
+        <div className="content has-text-centered">
           <div className="container has-text-white-ter">
             <div className="columns">
               <div className="column is-4">
@@ -54,20 +56,15 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                <a title="twitter" href="https://twitter.com/instafluffTV">
+                  <div className="icon twitterIcon" style={{ width: '1em', height: '1em' }}>
+										<TwitterSvg />
+									</div>
                 </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
+                <a title="instagram" href="https://www.instagram.com/instafluffTV">
+                  <div className="icon instagramIcon" style={{ width: '1em', height: '1em' }}>
+										<InstagramSvg />
+									</div>
                 </a>
               </div>
             </div>

@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import discordIcon from '../assets/icons/discord-brands.svg'
-//import hammerIcon from '../assets/icons/hammer-solid.svg'
-import instagramIcon from '../assets/icons/instagram-brands.svg'
-import twitchIcon from '../assets/icons/twitch-brands.svg'
-import youtubeIcon from '../assets/icons/youtube-brands.svg'
-import twitterIcon from '../assets/icons/twitter-brands.svg'
-import githubAltIcon from '../assets/icons/github-alt-brands.svg'
-//import githubIcon from '../assets/icons/github-brands.svg'
+import { TwitchSvg } from './svg_icons'
+import { DiscordSvg } from './svg_icons'
+import { InstagramSvg } from './svg_icons'
+import { YoutubeSvg } from './svg_icons'
+import { TwitterSvg } from './svg_icons'
+import { GithubSvg } from './svg_icons'
 
 const brandNameStyle = { color: '#fff', fontFamily: 'Bubblegum Sans', fontSize: '32px', fontWeight: 400 }
 
@@ -76,32 +74,32 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a className="navbar-item" href="https://www.twitch.tv/instafluff" target="_blank" rel="noopener noreferrer">
                 <span className="icon twitchIcon">
-                  <img src={twitchIcon} alt="Twitch" />
+									<TwitchSvg />
                 </span>
               </a>
               <a className="navbar-item" href="http://discord.instafluff.tv/" target="_blank" rel="noopener noreferrer">
                 <span className="icon discordIcon">
-                  <img src={discordIcon} alt="Discord" />
+                  <DiscordSvg />
                 </span>
               </a>
               <a className="navbar-item" href="https://www.instagram.com/instafluffTV" target="_blank" rel="noopener noreferrer">
                 <span className="icon instagramIcon">
-                  <img src={instagramIcon} alt="Instagram" />
+                  <InstagramSvg />
                 </span>
               </a>
               <a className="navbar-item" href="https://www.youtube.com/channel/UCZQgFekgEhWRH3_iIqeNSDA" target="_blank" rel="noopener noreferrer">
                 <span className="icon youtubeIcon">
-                  <img src={youtubeIcon} alt="YouTube" />
+                  <YoutubeSvg />
                 </span>
               </a>
               <a className="navbar-item" href="https://twitter.com/instafluffTV" target="_blank" rel="noopener noreferrer">
                 <span className="icon twitterIcon">
-                  <img src={twitterIcon} alt="Twitter" />
+                  <TwitterSvg />
                 </span>
               </a>
               <a className="navbar-item" href="https://github.com/instafluff" target="_blank" rel="noopener noreferrer">
                 <span className="icon githubIcon">
-                  <img src={githubAltIcon} alt="Github" />
+                  <GithubSvg />
                 </span>
               </a>
             </div>

@@ -7,11 +7,69 @@ $instafNavBgColor: #FFAD15;
 $instafNavShadowColor: #F5A210;
 $instafHilightBgColor: #FFDF65;
 $instafBodyInvertColor: #FFFFFF;
+$instafTextColor: #7F6733;
+$instafTitleColor: #544323;
 
 $primary: $instafBodyBgColor;
 $primary-invert: $instafBodyInvertColor;
-$body-color: #333;
+$body-color: $instafTextColor;
 $black: #2b2523;
+
+//Bulma overrides
+$footer-background-color: $instafBodyBgColor;
+$footer-padding: 3rem 1.5rem 3rem;
+
+//$menu-item-color: $white-ter;
+//$menu-item-hover-color: $black !important;
+//$menu-item-hover-background-color: $black;
+//$menu-item-active-color: $primary-invert;
+//$menu-item-active-background-color:	$primary-invert;
+//$menu-list-border-left: 1px solid $primary-invert;
+//$menu-label-color: $white-ter;
+
+@import "~bulma";
+
+html, body {
+	height: 100%;
+}
+
+body, main {
+  background-color: $instafBodyBgColor;
+}
+.navbar {
+  background-color: $instafNavBgColor;
+}
+.navbar-menu {
+  background-color: $instafNavBgColor;
+}
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+  background-color: $instafNavBgColor;
+	color: #fff;
+}
+.navbar.has-shadow {
+    box-shadow: 0 2px 0 0 
+    $instafNavShadowColor;
+}
+.notification {
+  background-color: $instafHilightBgColor;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bubblegum Sans';
+	font-weight: 400;
+	color: $instafTitleColor;
+	margin-top: 12px;
+}
+h1 {
+	font-size: 44px;
+}
+h2 {
+	font-size: 33px;
+}
+.subtitle {
+	color: $instafTextColor;
+}
 
 .content .taglist {
   list-style: none;
@@ -85,30 +143,14 @@ $black: #2b2523;
 //  color: $primary;
 //}
 
-// Override for use of svg's from https://simpleicons.org/
-.icon svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: currentColor;
-}
-
 .navbar-brand .navbar-item.logo {
   padding: 0 1rem;
 }
 
-footer.footer {
-  padding: 3rem 0rem 0rem;
-  background-color: transparent;
-}
-
-//Menu overrides
-$menu-item-color: $white-ter;
-$menu-item-hover-color: $black !important;
-$menu-item-hover-background-color: $black;
-$menu-item-active-color: $primary-invert;
-$menu-item-active-background-color:	$primary-invert;
-$menu-list-border-left: 1px solid $primary-invert;
-$menu-label-color: $white-ter;
+//footer.footer {
+//  padding: 3rem 0rem 0rem;
+//  background-color: transparent;
+//}
 
 .menu-label {
   font-size: 1em !important;
@@ -150,48 +192,8 @@ $menu-label-color: $white-ter;
   margin: 0 1.5em 0 0;
 }
 
-@import "~bulma";
-
-// responsiveness
-@include tablet-only {
-  .blog-list-item .featured-thumbnail {
-    flex-basis: 50%;
-	}
-}
-
-@include mobile {
-  .blog-list-item header {
-    display: block;
-	}
-  .blog-list-item .featured-thumbnail {
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
-	}
-}
-
-body {
-  background-color: $instafBodyBgColor;
-}
-.navbar {
-  background-color: $instafNavBgColor;
-}
-.navbar-menu {
-  background-color: $instafNavBgColor;
-}
-.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
-  background-color: $instafNavBgColor;
-	color: #fff;
-}
-.navbar.has-shadow {
-    box-shadow: 0 2px 0 0 
-    $instafNavShadowColor;
-}
-.notification {
-  background-color: $instafHilightBgColor;
-}
-.footer {
-  background-color: $instafBodyBgColor;
+.icon svg {
+  fill: currentColor;
 }
 
 .twitchIcon {
@@ -211,4 +213,26 @@ body {
 }
 .githubIcon {
 	color: #333;
+}
+
+
+
+
+
+// responsiveness
+@include tablet-only {
+  .blog-list-item .featured-thumbnail {
+    flex-basis: 50%;
+	}
+}
+
+@include mobile {
+  .blog-list-item header {
+    display: block;
+	}
+  .blog-list-item .featured-thumbnail {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 0 1em;
+	}
 }
