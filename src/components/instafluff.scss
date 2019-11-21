@@ -6,18 +6,20 @@ $instafBodyBgColor: #FFB927;
 $instafNavBgColor: #FFAD15;
 $instafNavShadowColor: #F5A210;
 $instafHilightBgColor: #FFDF65;
-$instafBodyInvertColor: #FFFFFF;
+$instafLightBgColor: #FAC84A;
 $instafTextColor: #635028;
 $instafHeaderTextColor: #544323;
+$instafLinkTextColor: #26547C;
 
 $primary: $instafBodyBgColor;
-$primary-invert: $instafBodyInvertColor;
+$primary-invert: #FFF;
 $body-color: $instafTextColor;
 $black: #2b2523;
 
 //Bulma overrides
 $footer-background-color: $instafBodyBgColor;
 $footer-padding: 3rem 1.5rem 3rem;
+$red: #F32500;
 
 //$menu-item-color: $white-ter;
 //$menu-item-hover-color: $black !important;
@@ -53,13 +55,14 @@ body, main {
 .notification {
   background-color: $instafHilightBgColor;
 }
-
+.lightBg {
+	background-color: $instafLightBgColor;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bubblegum Sans';
 	font-weight: 400;
 	color: $instafHeaderTextColor;
-	margin-top: 12px;
 }
 h1 {
 	font-size: 44px;

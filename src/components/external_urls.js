@@ -7,7 +7,9 @@ const ExternalURLs = {
 	Twitter: 'https://twitter.com/instafluffTV',
 	Github: 'https://github.com/instafluff',
 	GithubSponsor: 'https://github.com/sponsors/instafluff',
-	FluffyUpdates: 'https://www.instafluff.tv/posts.html'
+	FluffyUpdates: 'https://www.instafluff.tv/posts.html',
+	ChatTranslator: 'http://chattranslator.instafluff.tv/',
+	ClippyRaid: 'http://clippyraid.instafluff.tv/'
 }
 
 export default ExternalURLs
