@@ -7,8 +7,8 @@ $instafNavBgColor: #FFAD15;
 $instafNavShadowColor: #F5A210;
 $instafHilightBgColor: #FFDF65;
 $instafBodyInvertColor: #FFFFFF;
-$instafTextColor: #7F6733;
-$instafTitleColor: #544323;
+$instafTextColor: #635028;
+$instafHeaderTextColor: #544323;
 
 $primary: $instafBodyBgColor;
 $primary-invert: $instafBodyInvertColor;
@@ -58,7 +58,7 @@ body, main {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bubblegum Sans';
 	font-weight: 400;
-	color: $instafTitleColor;
+	color: $instafHeaderTextColor;
 	margin-top: 12px;
 }
 h1 {
@@ -69,6 +69,13 @@ h2 {
 }
 .subtitle {
 	color: $instafTextColor;
+}
+
+.brandName {
+	color: #fff;
+	font-family: 'Bubblegum Sans';
+	font-size: 32px;
+	font-weight: 400;
 }
 
 .content .taglist {
@@ -203,7 +210,7 @@ h2 {
 	color: #6F85D5;
 }
 .instagramIcon {
-	color: #333;
+	color: #C70079;
 }
 .youtubeIcon {
 	color: #F40202;

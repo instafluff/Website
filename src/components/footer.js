@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import instagram from '../assets/icons/instagram-brands.svg'
-import twitter from '../assets/icons/twitter-brands.svg'
 import { InstagramSvg } from './svg_icons'
 import { TwitterSvg } from './svg_icons'
+
+import ExternalURLs from './external_urls'
 
 const Footer = class extends React.Component {
   render() {
@@ -56,12 +56,12 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="twitter" href="https://twitter.com/instafluffTV">
+                <a title="twitter" href={ExternalURLs.Twitter}>
                   <div className="icon twitterIcon" style={{ width: '1em', height: '1em' }}>
 										<TwitterSvg />
 									</div>
                 </a>
-                <a title="instagram" href="https://www.instagram.com/instafluffTV">
+                <a title="instagram" href={ExternalURLs.Instagram}>
                   <div className="icon instagramIcon" style={{ width: '1em', height: '1em' }}>
 										<InstagramSvg />
 									</div>

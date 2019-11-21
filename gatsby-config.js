@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Instafluff`,
     description: `Streaming on Twitch and building extensions, overlays, and more!`,
-    author: `@gatsbyjs`,
+    author: `Instafluff`,
   },
   plugins: [
 	  `gatsby-plugin-sass`,
