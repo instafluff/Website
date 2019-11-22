@@ -85,34 +85,31 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="#sec-projects">Projects</Link>
               <Link className="navbar-item" to="/page-2">Page2</Link>
             </div>
+						
             <div className="navbar-end has-text-centered">
-              <a title="twitch" className="navbar-item" href={ExternalURLs.Twitch} target="_blank" rel="noopener noreferrer">
+              <a title="twitch" className="navbar-item is-hidden-touch" href={ExternalURLs.Twitch} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitchIcon">
 									<TwitchSvg />
                 </span>
               </a>
-              <a title="twitter" className="navbar-item" href={ExternalURLs.Twitter} target="_blank" rel="noopener noreferrer">
+              <a title="twitter" className="navbar-item is-hidden-touch" href={ExternalURLs.Twitter} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitterIcon">
                   <TwitterSvg />
                 </span>
               </a>
-              <a title="github" className="navbar-item" href={ExternalURLs.Github} target="_blank" rel="noopener noreferrer">
+              <a title="github" className="navbar-item is-hidden-touch" href={ExternalURLs.Github} target="_blank" rel="noopener noreferrer">
                 <span className="icon githubIcon">
                   <GithubSvg />
                 </span>
               </a>
 							
 							<div className="navbar-item">
-								<div className="field is-grouped is-grouped-multiline">
-									<p className="control">
-										<a className="button sponsor-button" href={ExternalURLs.GithubSponsor} target="_blank">
-											<span className="icon heartIcon" style={iconSocialStyle}>
-												<HeartSvg />
-											</span>
-											<span style={sponsorTextStyle}>Sponsor</span>
-										</a>
-									</p>
-								</div>
+								<a className="button sponsor-button" href={ExternalURLs.GithubSponsor} target="_blank">
+									<span className="icon heartIcon" style={iconSocialStyle}>
+										<HeartSvg />
+									</span>
+									<span style={sponsorTextStyle}>Sponsor</span>
+								</a>
 							</div>
 							
             </div>
