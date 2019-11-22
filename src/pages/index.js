@@ -16,7 +16,7 @@ const cardSubColumnStyle = { maxWidth: '300px', margin: 'auto' }
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-		<section className="hero">
+		<section id="sec-intro" className="hero">
 			<div className="hero-body">
 				<div className="container">
 					<h1>Welcome to the Comfy Corner!</h1>
@@ -24,7 +24,7 @@ const IndexPage = () => (
 				</div>
 			</div>
 		</section>
-		<section className="hero lightBg">
+		<section id="sec-codingcafe" className="hero lightBg">
 			<div className="hero-body">
 				<div className="container">
 					<div className="columns">
@@ -45,7 +45,7 @@ const IndexPage = () => (
 				</div>
 			</div>
 		</section>
-		<section className="hero">
+		<section id="sec-projects" className="hero">
 			<div className="hero-body">
 				<div className="container">
 					<div className="columns is-multiline">

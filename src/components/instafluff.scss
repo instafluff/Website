@@ -52,6 +52,15 @@ body, main {
     box-shadow: 0 2px 0 0 
     $instafNavShadowColor;
 }
+
+// Override bulma style so that navbar items only change color when hovered over. Items were keeping the highlight color after being clicked on.
+a.navbar-item:not(:hover), .navbar-link:not(:hover) {
+  color: currentColor;
+}
+a.navbar-item {
+	font-weight: 600;
+}
+
 .notification {
   background-color: $instafHilightBgColor;
 }
@@ -249,8 +258,25 @@ h2 {
 .githubIcon {
 	color: #333;
 }
+.heartIcon {
+	color: #F03366;
+}
 
+.sponsor-button span {
+	font-size: .875rem;
+  font-weight: 600;
+}
 
+.sponsor-button {
+ background-color:#eff3f6;
+ background-image:linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+ border-color:#1b1f2333;
+ color:#24292e;
+ font-size:.875rem;
+ height:auto;
+ padding:calc(.5em - 1px) 1em;
+ position:relative
+}
 
 // responsiveness
 @include tablet-only {
