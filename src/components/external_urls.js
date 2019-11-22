@@ -9,7 +9,8 @@ const ExternalURLs = {
 	GithubSponsor: 'https://github.com/sponsors/instafluff',
 	FluffyUpdates: 'https://www.instafluff.tv/posts.html',
 	ChatTranslator: 'http://chattranslator.instafluff.tv/',
-	ClippyRaid: 'http://clippyraid.instafluff.tv/'
+	ClippyRaid: 'http://clippyraid.instafluff.tv/',
+	StreamPuppy: 'https://www.streampuppy.com/'
 }
 
 export default ExternalURLs
