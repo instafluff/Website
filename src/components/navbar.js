@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { TwitchSvg } from './svg_icons'
-import { DiscordSvg } from './svg_icons'
-import { InstagramSvg } from './svg_icons'
-import { YoutubeSvg } from './svg_icons'
+//import { DiscordSvg } from './svg_icons'
+//import { InstagramSvg } from './svg_icons'
+//import { YoutubeSvg } from './svg_icons'
 import { TwitterSvg } from './svg_icons'
 import { GithubSvg } from './svg_icons'
 import { HeartSvg } from './svg_icons'
@@ -83,7 +83,6 @@ const Navbar = class extends React.Component {
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="#sec-codingcafe">Coding Cafe</Link>
               <Link className="navbar-item" to="#sec-projects">Projects</Link>
-              <Link className="navbar-item" to="/page-2">Page2</Link>
             </div>
 						
             <div className="navbar-end has-text-centered">
@@ -104,7 +103,7 @@ const Navbar = class extends React.Component {
               </a>
 							
 							<div className="navbar-item">
-								<a className="button sponsor-button" href={ExternalURLs.GithubSponsor} target="_blank">
+								<a className="button sponsor-button" href={ExternalURLs.GithubSponsor} target="_blank" rel="noopener noreferrer">
 									<span className="icon heartIcon" style={iconSocialStyle}>
 										<HeartSvg />
 									</span>

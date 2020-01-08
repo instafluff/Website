@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bubblegum Sans';
 	font-weight: 400;
 	color: $instafHeaderTextColor;
+	margin: 0 0 20px;
 }
 h1 {
 	font-size: 44px;
@@ -79,8 +80,20 @@ h1 {
 h2 {
 	font-size: 33px;
 }
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
 .subtitle {
 	color: $instafTextColor;
+}
+p {
+	margin: 0 0 20px;
+}
+hr {
+	background-color: $instafNavShadowColor;
 }
 
 .brandName {
@@ -219,6 +232,7 @@ h2 {
 	color: $instafHeaderTextColor;
 	font-size: 1.25rem;
 	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .footer-link-title:not(:first-child) {
@@ -227,6 +241,7 @@ h2 {
 
 .footer-link {
 	margin-top: 0.5rem;
+	margin-bottom: 0;
 }
 .footer-link.is-more {
 	font-size: 0.875rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 
 import { TwitchSvg } from './svg_icons'
 import { DiscordSvg } from './svg_icons'
@@ -9,6 +9,21 @@ import { TwitterSvg } from './svg_icons'
 import { GithubSvg } from './svg_icons'
 
 import ExternalURLs from './external_urls'
+
+const getMarkdownPosts = graphql`
+{
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1) {
+		edges {
+      node {
+        frontmatter {
+          path
+          title
+        }
+      }
+    }
+  }
+}
+`
 
 const footerColumnStyle = { padding: '1em 2em' }
 const footerSubColumnStyle = { maxWidth: '300px', margin: 'auto' }
@@ -23,9 +38,18 @@ const Footer = class extends React.Component {
 						<div className="column is-4" style={footerColumnStyle}>
 							<div style={footerSubColumnStyle}>
 								<p className="footer-link-title"><Link to="/">Home</Link></p>
-								<p className="footer-link-title"><a href={ExternalURLs.FluffyUpdates}>Openly Fluffy Updates</a></p>
-								<p className="footer-link"><a href={ExternalURLs.FluffyUpdates}>Openly Fluffy Year of 2018 Recap</a></p>
-								<p className="footer-link is-more"><a href={ExternalURLs.FluffyUpdates}>View all posts</a></p>
+								<p className="footer-link-title"><Link to="/openly-fluffy">Openly Fluffy Updates</Link></p>
+								<StaticQuery
+									query={getMarkdownPosts}
+									render={data => (
+										<>
+											{data.allMarkdownRemark.edges.map(({ node }) => (
+												<p className="footer-link"><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></p>
+											))}
+										</>
+									)}
+								/>
+								<p className="footer-link is-more"><Link to="/openly-fluffy">View all posts</Link></p>
 							</div>
 						</div>
 						<div className="column is-4" style={footerColumnStyle}>
