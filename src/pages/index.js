@@ -48,6 +48,8 @@ const IndexPage = () => (
 		<section id="sec-projects" className="hero">
 			<div className="hero-body">
 				<div className="container">
+					<h2>Twitch Extensions</h2>
+					<p className="subtitle">Extensions that you can add to your Twitch channel!</p>
 					<div className="columns is-multiline">
 						<div className="column" key="ChatTranslator">
 							<div style={cardSubColumnStyle}>
@@ -55,7 +57,7 @@ const IndexPage = () => (
 									<div>
 										<img style={imageStyle} src={chatTranslatorImg} alt={""} />
 									</div>
-									<h2>ChatTranslator</h2>
+									<h3>ChatTranslator</h3>
 									<p>Twitch Extension to break down language barriers among viewers!</p>
 									<a className="button is-danger is-rounded" style={buttonStyle} href={ExternalURLs.ChatTranslator} target="_blank" rel="noopener noreferrer">
 										Open Page
@@ -69,7 +71,7 @@ const IndexPage = () => (
 									<div>
 										<img style={imageStyle} src={clippyRaidImg} alt={""} />
 									</div>
-									<h2>ClippyRaid</h2>
+									<h3>ClippyRaid</h3>
 									<p>Twitch Extension to remove the hassle of highlighting chat text!</p>
 									<a className="button is-danger is-rounded" style={buttonStyle} href={ExternalURLs.ClippyRaid} target="_blank" rel="noopener noreferrer">
 										Open Page
