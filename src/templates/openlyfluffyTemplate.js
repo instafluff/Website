@@ -11,7 +11,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-			<SEO title="{frontmatter.title}" />
+			<SEO title={frontmatter.title} />
 			<section id="sec-intro" className="hero lightBg">
 				<div className="hero-body">
 					<div className="container">
