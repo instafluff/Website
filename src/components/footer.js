@@ -54,14 +54,16 @@ const Footer = class extends React.Component {
 						</div>
 						<div className="column is-4" style={footerColumnStyle}>
 							<div style={footerSubColumnStyle}>
-								<p className="footer-link-title"><a href={ExternalURLs.Twitch}>Coding Cafe</a></p>
-								<p className="footer-link"><a href={ExternalURLs.TwitchHighlights}>Highlighted Videos</a></p>
-								<p className="footer-link-title"><a href={ExternalURLs.StreamPuppy}>StreamPuppy</a></p>
+								<p className="footer-link-title"><Link to="#sec-codingcafe">Coding Cafe</Link></p>
+								<p className="footer-link"><a href={ExternalURLs.TwitchHighlights} target="_blank" rel="noopener noreferrer">Highlighted Videos</a></p>
+								<p className="footer-link-title"><Link to="#sec-twitchextensions">Twitch Extensions</Link></p>
 							</div>
 						</div>
 						<div className="column is-4" style={footerColumnStyle}>
 							<div style={footerSubColumnStyle}>
-								<p className="footer-link-title"><Link to="#sec-twitchextensions">Twitch Extensions</Link></p>
+								<p className="footer-link-title"><a href={ExternalURLs.StreamPuppy} target="_blank" rel="noopener noreferrer">StreamPuppy</a></p>
+								<p className="footer-link-title"><a href={ExternalURLs.WarmHands} target="_blank" rel="noopener noreferrer">Hand Warmers</a></p>
+								<p className="footer-link-title"><a href={ExternalURLs.Cookbook} target="_blank" rel="noopener noreferrer">Mug Cookbook</a></p>
 							</div>
 						</div>
 					</div>

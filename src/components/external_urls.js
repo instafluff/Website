@@ -10,7 +10,9 @@ const ExternalURLs = {
 	FluffyUpdates: 'https://www.instafluff.tv/posts.html',
 	ChatTranslator: 'http://chattranslator.instafluff.tv/',
 	ClippyRaid: 'http://clippyraid.instafluff.tv/',
-	StreamPuppy: 'https://www.streampuppy.com/'
+	StreamPuppy: 'https://www.streampuppy.com/',
+	WarmHands: 'http://warmhands.instafluff.tv',
+	Cookbook: 'http://cookbook.instafluff.tv'
 }
 
 export default ExternalURLs
