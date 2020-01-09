@@ -61,7 +61,7 @@ const Footer = class extends React.Component {
 						</div>
 						<div className="column is-4" style={footerColumnStyle}>
 							<div style={footerSubColumnStyle}>
-								<p className="footer-link-title"><Link to="/">Projects and Stuff</Link></p>
+								<p className="footer-link-title"><Link to="#sec-twitchextensions">Twitch Extensions</Link></p>
 							</div>
 						</div>
 					</div>

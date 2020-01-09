@@ -45,7 +45,7 @@ const IndexPage = () => (
 				</div>
 			</div>
 		</section>
-		<section id="sec-projects" className="hero">
+		<section id="sec-twitchextensions" className="hero">
 			<div className="hero-body">
 				<div className="container">
 					<h2>Twitch Extensions</h2>
