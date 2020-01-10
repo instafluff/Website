@@ -70,32 +70,32 @@ const Footer = class extends React.Component {
 					<div className="social has-text-centered">
               <a title="twitter" href={ExternalURLs.Twitch} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitchIcon" style={iconSocialStyle}>
-									<TwitchSvg />
+									<TwitchSvg svgclass="svg-16" />
                 </span>
               </a>
               <a title="discord" href={ExternalURLs.Discord} target="_blank" rel="noopener noreferrer">
                 <span className="icon discordIcon" style={iconSocialStyle}>
-                  <DiscordSvg />
+                  <DiscordSvg svgclass="svg-16" />
                 </span>
               </a>
               <a title="instagram" href={ExternalURLs.Instagram} target="_blank" rel="noopener noreferrer">
                 <span className="icon instagramIcon" style={iconSocialStyle}>
-                  <InstagramSvg />
+                  <InstagramSvg svgclass="svg-16" />
                 </span>
               </a>
               <a title="youtube" href={ExternalURLs.Youtube} target="_blank" rel="noopener noreferrer">
                 <span className="icon youtubeIcon" style={iconSocialStyle}>
-                  <YoutubeSvg />
+                  <YoutubeSvg svgclass="svg-16" />
                 </span>
               </a>
               <a title="twitter" href={ExternalURLs.Twitter} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitterIcon" style={iconSocialStyle}>
-                  <TwitterSvg />
+                  <TwitterSvg svgclass="svg-16" />
                 </span>
               </a>
               <a title="github" href={ExternalURLs.Github} target="_blank" rel="noopener noreferrer">
                 <span className="icon githubIcon" style={iconSocialStyle}>
-                  <GithubSvg />
+                  <GithubSvg svgclass="svg-16" />
                 </span>
               </a>
 					</div>

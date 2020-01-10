@@ -57,12 +57,12 @@ const Navbar = class extends React.Component {
             </Link>
 						<a title="twitch" className="navbar-item is-hidden-desktop" href={ExternalURLs.Twitch} target="_blank" rel="noopener noreferrer">
 							<span className="icon twitchIcon">
-								<TwitchSvg />
+								<TwitchSvg svgclass="svg-24" />
 							</span>
 						</a>
 						<a title="twitter" className="navbar-item is-hidden-desktop" href={ExternalURLs.Twitter} target="_blank" rel="noopener noreferrer">
 							<span className="icon twitterIcon">
-								<TwitterSvg />
+								<TwitterSvg svgclass="svg-24" />
 							</span>
 						</a>
             {/* Hamburger menu */}
@@ -91,24 +91,24 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a title="twitch" className="navbar-item is-hidden-touch" href={ExternalURLs.Twitch} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitchIcon">
-									<TwitchSvg />
+									<TwitchSvg svgclass="svg-24" />
                 </span>
               </a>
               <a title="twitter" className="navbar-item is-hidden-touch" href={ExternalURLs.Twitter} target="_blank" rel="noopener noreferrer">
                 <span className="icon twitterIcon">
-                  <TwitterSvg />
+                  <TwitterSvg svgclass="svg-24" />
                 </span>
               </a>
               <a title="github" className="navbar-item is-hidden-touch" href={ExternalURLs.Github} target="_blank" rel="noopener noreferrer">
                 <span className="icon githubIcon">
-                  <GithubSvg />
+                  <GithubSvg svgclass="svg-24" />
                 </span>
               </a>
 							
 							<div className="navbar-item">
 								<a className="button sponsor-button" href={ExternalURLs.GithubSponsor} target="_blank" rel="noopener noreferrer">
 									<span className="icon heartIcon" style={iconSocialStyle}>
-										<HeartSvg />
+										<HeartSvg svgclass="svg-16" />
 									</span>
 									<span style={sponsorTextStyle}>Sponsor</span>
 								</a>
