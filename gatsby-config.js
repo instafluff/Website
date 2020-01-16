@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Instafluff`,
-    description: `Streaming on Twitch and building extensions, overlays, and more!`,
+    titleTemplate: "%s · Comfiest Coder & Mug Chef",
+    description: `Creator of StreamPuppy! Get Comfy at the Coding Cafe on Twitch Wed/Thu/Fri 8am PST`,
     author: `Instafluff`,
+    url: "https://www.instafluff.tv",
+    image: "https://www.instafluff.tv/assets/Profile.png",
+    twitterUsername: "@instafluffTV",
   },
   plugins: [
 	  `gatsby-plugin-sass`,
