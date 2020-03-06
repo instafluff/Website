@@ -100,7 +100,7 @@ const Footer = class extends React.Component {
               </a>
 					</div>
 					<div className="has-text-centered">
-						<p>© Instafluff | <a href="https://www.instafluff.tv">instafluff.tv</a></p>
+						<p>© Instafluff® | <a href="https://www.instafluff.tv">instafluff.tv</a></p>
 					</div>
 				</div>
       </footer>
