@@ -46,7 +46,7 @@ const IndexPage = () => (
 							<div className="has-text-centered">
 								{/* <img style={imageStyle} src={comfyCafeImg} alt={""} /> */}
 								<iframe
-									src="https://player.twitch.tv/?channel=instafluff&muted=true"
+									src="https://player.twitch.tv/?channel=instafluff&muted=true&parent=www.instafluff.tv"
 									height="360"
 									width="640"
 									frameborder="0"
